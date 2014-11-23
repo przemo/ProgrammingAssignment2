@@ -1,11 +1,16 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-# as stated in the assignment instructions the main purpose of the function is to create an object with the attached functions that allow for calculating an inverse of the matrix, however the object can be accesded multiple times, but it is updated only at the time when input data changes. It helps to save time when executing and accessing data in the loops. 
+# as stated in the assignment instructions the main purpose of the function is
+# to create an object with the attached functions that allow for calculating an
+# inverse of the matrix, however the object can be accesded multiple times, but
+# it is updated only at the time when input data changes. It helps to save time
+# when executing and accessing data in the loops.
 
 
-## Write a short comment describing this function
-## the functions checks if the input matrix is squared, it is assumed that all input matrices are invertable. 
+## Write a short comment describing this function the functions checks if the
+## input matrix is squared, it is assumed that all input matrices are
+## invertable.
 
 makeCacheMatrix <- function(x = matrix()) {
   d <- dim(x)
@@ -26,8 +31,10 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## The following function help to access the data from the object created by makeCacheMatrix() 
-## If the output was not created it computes the inverse of the matrix, when already exists it gets the content from the object and updates the output only when the input data changes. 
+## The following function help to access the data from the object created by
+## makeCacheMatrix() If the output was not created it computes the inverse of
+## the matrix, when already exists it gets the content from the object and
+## updates the output only when the input data changes.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
